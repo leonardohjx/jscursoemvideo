@@ -29,3 +29,7 @@ div {
 img#imagem {
     width: 300px;
 }
+
+select#flista{
+    width: 150px;
+}

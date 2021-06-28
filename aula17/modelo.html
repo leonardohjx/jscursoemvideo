@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de idade</title>
+    <title>Analisador de Números</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body onload="carregar()">
     <header>
-        <h1>Verificador de Idade</h1>
+        <h1>Analisador de Números</h1>
     </header>
 
     <section>
@@ -17,19 +17,12 @@
             
         </div>
         <div> 
-            <p>Ano de nascimento: 
-                <input type="number" name="txtano" id="txtano" min="0">
-            </p>
-            <p>Sexo:
-                <input type="radio" name="radsex" id="masc" checked>
-                <label for="masc">Masculino</label>
-                <input type="radio" name="radsex" id="fem">
-                <label for="fem">Feminino</label>
-            </p>
-
-            <p>
-                <input type="button" value="Verificar" onclick="verificar()">
-            </p>            
+            <p>Número (entre 1 e 100):
+                <input type="number" name="fnum" id="fnum" min="0" max="100">
+                <input type="button" value="Adicionar" onclick="adicionar()">
+                <br><br><select name="flista" id="flista" size="6"></select><br>
+                <input type="button" value="Finalizar" onclick="finalizar()">
+            </p>                   
         </div>
 
         <div id="res">

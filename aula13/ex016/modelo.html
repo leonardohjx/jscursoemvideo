@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de idade</title>
+    <title>Super Contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body onload="carregar()">
     <header>
-        <h1>Verificador de Idade</h1>
+        <h1>Vamos contar</h1>
     </header>
 
     <section>
         <div>
             
         </div>
-        <div> 
-            <p>Ano de nascimento: 
-                <input type="number" name="txtano" id="txtano" min="0">
+        <div id="dados"> 
+            <p>Início: 
+                <input type="number" name="txtinicio" id="txtinicio" min="0">
             </p>
-            <p>Sexo:
-                <input type="radio" name="radsex" id="masc" checked>
-                <label for="masc">Masculino</label>
-                <input type="radio" name="radsex" id="fem">
-                <label for="fem">Feminino</label>
+            <p>Fim: 
+                <input type="number" name="txtf" id="txtfim" min="0">
             </p>
-
+            <p>
+                Passo: 
+                <input type="number" name="txtp" id="txtpasso" min="0">
+            </p>            
             <p>
                 <input type="button" value="Verificar" onclick="verificar()">
-            </p>            
+            </p>
         </div>
 
         <div id="res">
